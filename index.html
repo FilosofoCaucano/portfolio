@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willian David Correa · Systems Engineer, AWS Cloud, IoT</title>
+  <meta name="description" content="Portfolio of Willian David Correa, a systems engineer from Valle del Cauca, Colombia, working toward AWS cloud engineering. Projects in IoT, Python and cloud.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Willian David Correa, systems engineer">
+  <meta property="og:description" content="Projects where code meets the physical world: sensors, data pipelines and the cloud behind them.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    /* Apply a saved theme before first paint, so the page does not flash. */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <div class="sky">
+    <header class="bar">
+      <a class="brand" href="#top">FilosofoCaucano</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="toggle" id="theme-toggle" type="button">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <span class="to-dark">Dark mode</span>
+        <span class="to-light">Light mode</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="name">
+        <div class="intro-text">
+          <h1 id="name">Willian David Correa</h1>
+          <p class="lede">I'm a systems engineer working toward AWS cloud engineering. I like projects where code meets the physical world: sensors, data pipelines and the cloud services behind them.</p>
+          <p class="actions">
+            <a class="btn fill" href="https://github.com/FilosofoCaucano">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/willian-david-correa-valencia-595247271/">LinkedIn</a>
+            <!-- When you have a CV, put the file at assets/cv.pdf and uncomment this line:
+            <a class="btn" href="assets/cv.pdf">Download CV</a>
+            -->
+          </p>
+        </div>
+        <img class="sun" src="assets/avatar.png" width="264" height="264" alt="Illustrated portrait of Willian: a figure in a wide-brimmed hat with braids and a striped poncho.">
+      </section>
+
+      <div class="land" aria-hidden="true">
+        <svg viewBox="0 0 1200 220" preserveAspectRatio="none" focusable="false">
+          <defs>
+            <clipPath id="mid-hill"><path d="M0 185 C200 150 400 178 600 160 S900 110 1050 118 S1160 100 1200 104 L1200 220 L0 220 Z"/></clipPath>
+          </defs>
+          <path class="hill-far" d="M0 150 C160 110 320 140 480 125 S780 50 940 62 S1120 30 1200 48 L1200 220 L0 220 Z"/>
+          <path class="hill-mid" d="M0 185 C200 150 400 178 600 160 S900 110 1050 118 S1160 100 1200 104 L1200 220 L0 220 Z"/>
+          <g clip-path="url(#mid-hill)">
+            <path class="furrow" d="M0 199 C200 164 400 192 600 174 S900 124 1050 132 S1160 114 1200 118"/>
+            <path class="furrow" d="M0 213 C200 178 400 206 600 188 S900 138 1050 146 S1160 128 1200 132"/>
+            <path class="furrow" d="M0 227 C200 192 400 220 600 202 S900 152 1050 160 S1160 142 1200 146"/>
+          </g>
+          <path class="hill-near" d="M0 210 C250 192 520 214 800 196 S1100 182 1200 190 L1200 220 L0 220 Z"/>
+        </svg>
+      </div>
+    </main>
+  </div>
+
+  <div class="soil">
+    <div class="wrap">
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <p class="lead-in">A soil sensor I'm building now, and a few finished projects.</p>
+
+        <ul class="projects">
+          <li class="project" style="--tab:#7A5538">
+            <h3>Soil telemetry node</h3>
+            <p class="status"><span class="dot" aria-hidden="true"></span>In progress, running in simulation for now.</p>
+            <p>An ESP32 node that reads soil moisture and air temperature, sends the data over MQTT, and answers plain-language questions about the history through a vector database. Built for agritech.</p>
+            <p class="stack">ESP32, MQTT, vector database, Wokwi</p>
+            <p class="repo">Repository coming soon.</p>
+          </li>
+
+          <li class="project" style="--tab:#866226">
+            <h3>Cenit</h3>
+            <p>Finds the two dates each year when the sun crosses the zenith over any Colombian municipality. It comes as a desktop app and an Android app.</p>
+            <p class="stack">Python, Android</p>
+            <p class="repo"><a href="https://github.com/FilosofoCaucano/cenit">cenit on GitHub</a></p>
+          </li>
+
+          <li class="project" style="--tab:#A0452E">
+            <h3>Camiones del sur</h3>
+            <p>A road-transport simulator. The game logic is pure and testable, so it runs without opening a window.</p>
+            <p class="stack">Python, ursina</p>
+            <p class="repo"><a href="https://github.com/FilosofoCaucano/camiones-del-sur">camiones-del-sur on GitHub</a></p>
+          </li>
+
+          <li class="project" style="--tab:#7A5568">
+            <h3>Rackituq</h3>
+            <p>A programming language of my own, built in Racket.</p>
+            <p class="stack">Racket</p>
+            <p class="repo"><a href="https://github.com/FilosofoCaucano/rackituq">rackituq on GitHub</a></p>
+          </li>
+
+          <li class="project" style="--tab:#4A6C88">
+            <h3>Fruta tienda</h3>
+            <p>A fruit shop with a Spring Boot backend and an Angular frontend.</p>
+            <p class="stack">Spring Boot, Angular, TypeScript, MySQL</p>
+            <p class="repo"><a href="https://github.com/FilosofoCaucano/fruta-tienda">fruta-tienda on GitHub</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">About</h2>
+          <p>I'm a systems engineer from Valle del Cauca, Colombia. I like work where software meets something physical: a sensor, a drone, a field.</p>
+          <p>Right now I'm studying and building toward AWS cloud engineering, and I want to work remotely with international teams.</p>
+        </div>
+        <dl>
+          <dt>Languages</dt>
+          <dd>Spanish (native), English (B2+), Portuguese</dd>
+          <dt>Certified in</dt>
+          <dd>LoRaWAN, UAS (drone) piloting, AutoCAD 3D</dd>
+          <dt>Works with</dt>
+          <dd>Python, FastAPI, React, PostgreSQL, AWS, Docker, MQTT</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>The quickest way to reach me is LinkedIn or email. I answer in English or Spanish.</p>
+        <p class="big-links">
+          <a href="https://www.linkedin.com/in/willian-david-correa-valencia-595247271/">LinkedIn</a>
+          <a href="mailto:williamdavidcv@gmail.com">Email me</a>
+        </p>
+      </section>
+
+      <footer class="foot">
+        <p>Willian David Correa, Valle del Cauca, Colombia.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
+
+
